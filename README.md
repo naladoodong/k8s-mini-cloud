@@ -1,4 +1,3 @@
-cat > README.md <<'EOF'
 # Kubernetes Mini Cloud Platform
 
 Kubernetes Mini Cloud Platform project(master 1 + worker 3).
