@@ -1,0 +1,22 @@
+apiVersion: v1
+items:
+- apiVersion: metallb.io/v1beta1
+  kind: L2Advertisement
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"metallb.io/v1beta1","kind":"L2Advertisement","metadata":{"annotations":{},"name":"l2-config","namespace":"metallb-system"},"spec":{"ipAddressPools":["my-ip-pool"],"nodeSelectors":[{"matchLabels":{"kubernetes.io/hostname":"node1"}},{"matchLabels":{"kubernetes.io/hostname":"node2"}},{"matchLabels":{"kubernetes.io/hostname":"node3"}}]}}
+    creationTimestamp: "2026-03-03T08:00:23Z"
+    generation: 3
+    name: l2-config
+    namespace: metallb-system
+    resourceVersion: "847795"
+    uid: df231701-c7bb-4957-9146-27fdc39fd7f6
+  spec:
+    interfaces:
+    - ens33
+    ipAddressPools:
+    - my-ip-pool
+kind: List
+metadata:
+  resourceVersion: ""
