@@ -1,0 +1,10 @@
+# outputs
+00-cluster/*.txt
+00-cluster/*.log
+00-cluster/*.yaml
+00-cluster/*.json
+
+# temp
+*.swp
+*.tmp
+.DS_Store
