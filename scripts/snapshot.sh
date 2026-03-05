@@ -6,7 +6,7 @@ mkdir -p "$OUT_DIR"
 
 ts="$(date +%Y%m%d-%H%M%S)"
 
-kubectl version --short | tee "${OUT_DIR}/version-${ts}.txt"
+kubectl version  | tee "${OUT_DIR}/version-${ts}.txt"
 kubectl get nodes -o wide | tee "${OUT_DIR}/nodes-${ts}.txt"
 kubectl get ns | tee "${OUT_DIR}/ns-${ts}.txt"
 
