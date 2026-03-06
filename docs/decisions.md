@@ -44,6 +44,13 @@ Reason
 - WordPress uploads require shared filesystem
 - easier scaling for multiple replicas
 
+## WordPress
+- Replicas: 3
+- Shared storage: pvc-wp (NFS RWX)
+- Database: mysql service in mini-cloud namespace
+- Ingress host: wordpress.local
+- Pod distribution: podAntiAffinity + topologySpreadConstraints
+
 
 ## Notes
 - Track why we chose each component and configuration.
